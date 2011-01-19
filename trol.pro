@@ -10,5 +10,11 @@ TARGET = trol
 TEMPLATE = app
 
 
-SOURCES += main.cpp
+SOURCES += main.cpp\
+    loginform.cpp \
+    usercontroller.cpp
 
+HEADERS  += loginform.h \
+    usercontroller.h
+
+FORMS    += loginform.ui
