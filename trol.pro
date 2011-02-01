@@ -13,11 +13,14 @@ TEMPLATE = app
 SOURCES += main.cpp\
     loginform.cpp \
     usercontroller.cpp \
-    createuserform.cpp
+    createuserform.cpp \
+    createfacilityform.cpp
 
 HEADERS  += loginform.h \
     usercontroller.h \
-    createuserform.h
+    createuserform.h \
+    createfacilityform.h
 
 FORMS    += loginform.ui \
-    createuserform.ui
+    createuserform.ui \
+    createfacilityform.ui
