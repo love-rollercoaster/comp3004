@@ -12,9 +12,12 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
     loginform.cpp \
-    usercontroller.cpp
+    usercontroller.cpp \
+    createuserform.cpp
 
 HEADERS  += loginform.h \
-    usercontroller.h
+    usercontroller.h \
+    createuserform.h
 
-FORMS    += loginform.ui
+FORMS    += loginform.ui \
+    createuserform.ui
