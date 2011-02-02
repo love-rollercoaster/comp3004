@@ -2,6 +2,7 @@
 #include "loginform.h"
 #include "createuserform.h"
 #include "createfacilityform.h"
+#include "removepatientfrombedform.h"
 
 int main(int argc, char *argv[])
 {
@@ -15,6 +16,9 @@ int main(int argc, char *argv[])
 
     CreateFacilityForm createFacilityForm;
     createFacilityForm.show();
+
+    RemovePatientFromBedForm r;
+    r.show();
 
     return a.exec();
 }

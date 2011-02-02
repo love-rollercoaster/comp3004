@@ -14,13 +14,19 @@ SOURCES += main.cpp\
     loginform.cpp \
     usercontroller.cpp \
     createuserform.cpp \
-    createfacilityform.cpp
+    createfacilityform.cpp \
+    addpatienttobedform.cpp \
+    removepatientfrombedform.cpp
 
 HEADERS  += loginform.h \
     usercontroller.h \
     createuserform.h \
-    createfacilityform.h
+    createfacilityform.h \
+    addpatienttobedform.h \
+    removepatientfrombedform.h
 
 FORMS    += loginform.ui \
     createuserform.ui \
-    createfacilityform.ui
+    addpatienttobedform.ui \
+    createfacilityform.ui \
+    removepatientfrombedform.ui
