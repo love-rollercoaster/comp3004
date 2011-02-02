@@ -6,3 +6,6 @@ Makefile
 
 # git
 *.orig
+
+# ressources
+img/*
