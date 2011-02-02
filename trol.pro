@@ -16,17 +16,23 @@ SOURCES += main.cpp\
     createuserform.cpp \
     createfacilityform.cpp \
     addpatienttobedform.cpp \
-    removepatientfrombedform.cpp
+    removepatientfrombedform.cpp \
+    viewwaitinglist.cpp \
+    addpatienttowaitinglistform.cpp
 
 HEADERS  += loginform.h \
     usercontroller.h \
     createuserform.h \
     createfacilityform.h \
     addpatienttobedform.h \
-    removepatientfrombedform.h
+    removepatientfrombedform.h \
+    viewwaitinglist.h \
+    addpatienttowaitinglistform.h
 
 FORMS    += loginform.ui \
     createuserform.ui \
     addpatienttobedform.ui \
     createfacilityform.ui \
-    removepatientfrombedform.ui
+    removepatientfrombedform.ui \
+    viewwaitinglist.ui \
+    addpatienttowaitinglistform.ui
