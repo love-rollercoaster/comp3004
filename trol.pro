@@ -20,7 +20,8 @@ SOURCES += main.cpp\
     viewwaitinglist.cpp \
     addpatienttowaitinglistform.cpp \
     movepatienttobed.cpp \
-    generatereport.cpp
+    generatereport.cpp \
+    viewfacilityinfo.cpp
 
 HEADERS  += loginform.h \
     usercontroller.h \
@@ -31,7 +32,8 @@ HEADERS  += loginform.h \
     viewwaitinglist.h \
     addpatienttowaitinglistform.h \
     movepatienttobed.h \
-    generatereport.h
+    generatereport.h \
+    viewfacilityinfo.h
 
 FORMS    += loginform.ui \
     createuserform.ui \
@@ -41,4 +43,5 @@ FORMS    += loginform.ui \
     viewwaitinglist.ui \
     addpatienttowaitinglistform.ui \
     movepatienttobed.ui \
-    generatereport.ui
+    generatereport.ui \
+    viewfacilityinfo.ui
