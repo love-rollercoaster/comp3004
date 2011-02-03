@@ -3,6 +3,7 @@
 #include "createuserform.h"
 #include "createfacilityform.h"
 #include "removepatientfrombedform.h"
+#include "generatereport.h"
 
 int main(int argc, char *argv[])
 {
@@ -19,6 +20,9 @@ int main(int argc, char *argv[])
 
     RemovePatientFromBedForm r;
     r.show();
+
+    GenerateReport g;
+    g.show();
 
     return a.exec();
 }

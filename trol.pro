@@ -19,7 +19,8 @@ SOURCES += main.cpp\
     removepatientfrombedform.cpp \
     viewwaitinglist.cpp \
     addpatienttowaitinglistform.cpp \
-    movepatienttobed.cpp
+    movepatienttobed.cpp \
+    generatereport.cpp
 
 HEADERS  += loginform.h \
     usercontroller.h \
@@ -29,7 +30,8 @@ HEADERS  += loginform.h \
     removepatientfrombedform.h \
     viewwaitinglist.h \
     addpatienttowaitinglistform.h \
-    movepatienttobed.h
+    movepatienttobed.h \
+    generatereport.h
 
 FORMS    += loginform.ui \
     createuserform.ui \
@@ -38,4 +40,5 @@ FORMS    += loginform.ui \
     removepatientfrombedform.ui \
     viewwaitinglist.ui \
     addpatienttowaitinglistform.ui \
-    movepatienttobed.ui
+    movepatienttobed.ui \
+    generatereport.ui
