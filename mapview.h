@@ -2,7 +2,7 @@
 #define MAPWIDGET_H
 
 #include <QtGui/QGraphicsView>
-#include <QtGui/QPixmap>
+#include <QtSvg/QGraphicsSvgItem>
 
 class FacilityMapNode;
 
@@ -16,9 +16,10 @@ public:
 
 protected:
     void resizeEvent ( QResizeEvent * event );
+    void mousePressEvent(QMouseEvent *event);
 
 private:
-    QPixmap mapImage;
+    QGraphicsSvgItem *image;
 
 };
 

@@ -9,8 +9,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>533</width>
-    <height>408</height>
+    <width>991</width>
+    <height>612</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -28,10 +28,10 @@
   <widget class="MapView" name="mapView">
    <property name="geometry">
     <rect>
-     <x>30</x>
-     <y>40</y>
-     <width>475</width>
-     <height>340</height>
+     <x>80</x>
+     <y>70</y>
+     <width>831</width>
+     <height>501</height>
     </rect>
    </property>
    <property name="sizePolicy">

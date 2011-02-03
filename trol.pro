@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui svg
 
 TARGET = trol
 TEMPLATE = app
@@ -26,7 +26,8 @@ SOURCES += main.cpp\
     mapcontroller.cpp \
     facilitymapnode.cpp \
     facility.cpp \
-    viewfacilityinfoform.cpp
+    viewfacilityinfoform.cpp \
+    viewreport.cpp
 
 HEADERS  += loginform.h \
     usercontroller.h \
@@ -43,7 +44,8 @@ HEADERS  += loginform.h \
     mapcontroller.h \
     facilitymapnode.h \
     facility.h \
-    viewfacilityinfoform.h
+    viewfacilityinfoform.h \
+    viewreport.h
 
 FORMS    += loginform.ui \
     createuserform.ui \
@@ -55,7 +57,8 @@ FORMS    += loginform.ui \
     movepatienttobed.ui \
     generatereport.ui \
     mapform.ui \
-    viewfacilityinfoform.ui
+    viewfacilityinfoform.ui \
+    viewreport.ui
 
 RESOURCES += \
     map.qrc
