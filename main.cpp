@@ -32,9 +32,7 @@ int main(int argc, char *argv[])
     Facility *f4 = new Facility(QPointF(410, 260), 0, Facility::HOSPITAL);
     Facility *f5 = new Facility(QPointF(654, 406), 0, Facility::HOSPITAL);
     Facility *f6 = new Facility(QPointF(810, 361), 0, Facility::NURSING_HOME);
-    //Facility *f7 = new Facility(QPointF(822, 483), 0, Facility::NURSING_HOME);
-    Facility *f8 = new Facility(QPointF(474, 409), 0, Facility::HOSPITAL);
-
+    Facility *f7 = new Facility(QPointF(474, 409), 0, Facility::HOSPITAL);
 
     MapController mapController;
     mapController.addFacility(f1);
@@ -43,9 +41,10 @@ int main(int argc, char *argv[])
     mapController.addFacility(f4);
     mapController.addFacility(f5);
     mapController.addFacility(f6);
-    //mapController.addFacility(f7);
-    mapController.addFacility(f8);
+    mapController.addFacility(f7);
 
+    ViewReport viewReport;
+    viewReport.show();
 
     return a.exec();
 }
