@@ -21,7 +21,11 @@ SOURCES += main.cpp\
     addpatienttowaitinglistform.cpp \
     movepatienttobed.cpp \
     generatereport.cpp \
-    viewfacilityinfo.cpp \
+    mapview.cpp \
+    mapform.cpp \
+    mapcontroller.cpp \
+    facilitymapnode.cpp \
+    facility.cpp \
     viewfacilityinfoform.cpp
 
 HEADERS  += loginform.h \
@@ -34,7 +38,11 @@ HEADERS  += loginform.h \
     addpatienttowaitinglistform.h \
     movepatienttobed.h \
     generatereport.h \
-    viewfacilityinfo.h \
+    mapview.h \
+    mapform.h \
+    mapcontroller.h \
+    facilitymapnode.h \
+    facility.h \
     viewfacilityinfoform.h
 
 FORMS    += loginform.ui \
@@ -46,5 +54,8 @@ FORMS    += loginform.ui \
     addpatienttowaitinglistform.ui \
     movepatienttobed.ui \
     generatereport.ui \
-    viewfacilityinfo.ui \
+    mapform.ui \
     viewfacilityinfoform.ui
+
+RESOURCES += \
+    map.qrc
