@@ -27,7 +27,7 @@ SOURCES += main.cpp\
     facilitymapnode.cpp \
     facility.cpp \
     viewfacilityinfoform.cpp \
-    viewreport.cpp
+    viewreportform.cpp
 
 HEADERS  += loginform.h \
     usercontroller.h \
@@ -45,7 +45,7 @@ HEADERS  += loginform.h \
     facilitymapnode.h \
     facility.h \
     viewfacilityinfoform.h \
-    viewreport.h
+    viewreportform.h
 
 FORMS    += loginform.ui \
     createuserform.ui \
@@ -58,7 +58,7 @@ FORMS    += loginform.ui \
     generatereport.ui \
     mapform.ui \
     viewfacilityinfoform.ui \
-    viewreport.ui
+    viewreportform.ui
 
 RESOURCES += \
     map.qrc

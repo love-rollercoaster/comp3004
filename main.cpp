@@ -6,6 +6,7 @@
 #include "generatereport.h"
 #include "mapcontroller.h"
 #include "facility.h"
+#include "viewreportform.h"
 
 int main(int argc, char *argv[])
 {
@@ -43,8 +44,8 @@ int main(int argc, char *argv[])
     mapController.addFacility(f6);
     mapController.addFacility(f7);
 
-    ViewReport viewReport;
-    viewReport.show();
+    ViewReportForm viewReportForm;
+    viewReportForm.show();
 
     return a.exec();
 }
