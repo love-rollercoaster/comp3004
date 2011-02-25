@@ -1,5 +1,5 @@
 #include "viewreportform.h"
-#include "ui_viewreport.h"
+#include "ui_viewreportform.h"
 #include <QGraphicsView>
 
 ViewReportForm::ViewReportForm(QWidget *parent) :
