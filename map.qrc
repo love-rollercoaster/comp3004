@@ -1,9 +1,8 @@
 <RCC>
     <qresource prefix="/">
-        <file>img/map.png</file>
-        <file>img/facilitymapnode/hospital.png</file>
-        <file>img/facilitymapnode/nursing_home.jpg</file>
         <file>img/graph.png</file>
         <file>img/map.svg</file>
+        <file>img/facilitymapnode/hospital.png</file>
+        <file>img/facilitymapnode/nursing_home.jpg</file>
     </qresource>
 </RCC>
