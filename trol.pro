@@ -1,64 +1,37 @@
 #-------------------------------------------------
-#
-# Project created by QtCreator 2011-01-13T06:27:54
-#
+# The Rollecoaster of Love [TROL]
+# Project configuration sexyness
 #-------------------------------------------------
 
-QT       += core gui svg
-
-TARGET = trol
+QT += core gui network svg
+TARGET   = trol
 TEMPLATE = app
+CONFIG  += warn_on
 
 
-SOURCES += main.cpp\
-    loginform.cpp \
-    usercontroller.cpp \
-    createuserform.cpp \
-    createfacilityform.cpp \
-    addpatienttobedform.cpp \
-    removepatientfrombedform.cpp \
-    viewwaitinglist.cpp \
-    addpatienttowaitinglistform.cpp \
-    movepatienttobed.cpp \
-    generatereport.cpp \
-    mapview.cpp \
-    mapform.cpp \
-    mapcontroller.cpp \
-    facilitymapnode.cpp \
-    facility.cpp \
-    viewfacilityinfoform.cpp \
-    viewreportform.cpp
+#-------------------------------------------------
+# File config
+#-------------------------------------------------
 
-HEADERS  += loginform.h \
-    usercontroller.h \
-    createuserform.h \
-    createfacilityform.h \
-    addpatienttobedform.h \
-    removepatientfrombedform.h \
-    viewwaitinglist.h \
-    addpatienttowaitinglistform.h \
-    movepatienttobed.h \
-    generatereport.h \
-    mapview.h \
-    mapform.h \
-    mapcontroller.h \
-    facilitymapnode.h \
-    facility.h \
-    viewfacilityinfoform.h \
-    viewreportform.h
+warning(Using undocumented feature $$files. Must test on lambda machines.)
 
-FORMS    += loginform.ui \
-    createuserform.ui \
-    addpatienttobedform.ui \
-    createfacilityform.ui \
-    removepatientfrombedform.ui \
-    viewwaitinglist.ui \
-    addpatienttowaitinglistform.ui \
-    movepatienttobed.ui \
-    generatereport.ui \
-    mapform.ui \
-    viewfacilityinfoform.ui \
-    viewreportform.ui
+SOURCES   += $$files(*.cpp)
+HEADERS   += $$files(*.h)
+FORMS     += $$files(*.ui)
+RESOURCES += $$files(*.qrc)
 
-RESOURCES += \
-    map.qrc
+
+#-------------------------------------------------
+# Build step: Mirrorring dropbox's img folder
+#-------------------------------------------------
+
+win32 {
+	dropbox_image_sync.commands += @call $${PWD}/scripts/mirror_images.bat
+}
+
+unix {
+    dropbox_image_sync.commands += @echo Dropbox image sync not implemented.
+}
+
+QMAKE_EXTRA_TARGETS += dropbox_image_sync
+PRE_TARGETDEPS += dropbox_image_sync
